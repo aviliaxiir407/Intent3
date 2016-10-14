@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        /*findViewById(R.id.imageViewSMS)
+        findViewById(R.id.imageViewSMS)
                 .setOnClickListener(new View.OnClickListener()
                 {
                     @Override
@@ -28,15 +28,15 @@ public class MainActivity extends AppCompatActivity {
                     {
                         composeSmsMessage("Pesan dari SMK Telkom Malang");
                     }
-                });*/
+                });
     }
 
-   /* private void composeSmsMessage(String message) {
+    private void composeSmsMessage(String message) {
         Intent intent = new Intent(Intent.ACTION_SEND);
         intent.setType("text/plain");
         intent.putExtra("sms_body", message);
         if (intent.resolveActivity(getPackageManager()) != null)startActivity(intent);
-    }*/
+    }
 
     private void dialPhoneNumber(String phoneNumber) {
         Intent intent = new Intent(Intent.ACTION_DIAL);
